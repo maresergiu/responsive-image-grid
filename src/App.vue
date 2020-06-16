@@ -1,18 +1,24 @@
 <template>
     <div id="app">
-        <div class="holder">
-            <header>
+        <header class="site-header">
+            <div class="holder">
                 <h1 class="sub-title">Media library</h1>
-            </header>
-            
-        </div>        
+            </div>
+        </header>
+        <div id="main">
+            <MediaList />
+        </div>
     </div>
 </template>
 
 <script>
-import './scss/global.scss'
+import './scss/main.scss'
+
+import MediaList from './components/MediaList.vue'
 
 export default {
-  
+    components: {
+        MediaList
+    }
 }
 </script>

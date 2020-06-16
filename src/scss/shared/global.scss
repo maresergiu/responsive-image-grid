@@ -1,0 +1,37 @@
+// general
+// -------
+* { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html { font-size: 62.5%; height: 100%; }
+html,
+body { min-height: 100%; padding: 0; margin: 0; font-family: $fontFamilySansSerifPrimaryRegular; }
+body { font-size: 16px; font-size: 1.6rem; }
+
+ul,
+ol { list-style-type: none; padding: 0; margin: 0; }
+
+img { width: 100%; height: auto; }
+
+a { position: relative; text-decoration: none; }
+
+.decoration-primary:after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 4px; background-color: $colorPrimary; transform: scaleX(0); transition: $transitionPrimary; }
+.decoration-primary:hover:after,
+.decoration-primary:focus:after { transform: scaleX(1); }
+
+// containers
+.holder { max-width: 1400px; padding: 0 20px; margin: 0 auto; }
+
+// text
+.sub-title { font-size: 26px; font-size: 2.6rem; }
+.text { font-size: 16px; font-size: 1.6rem; line-height: 32px; line-height: 3.2rem; }
+
+// module spacing 
+.mod { padding-top: 40px; }
+
+
+// float
+.cf::after { content: ""; clear: both; display: table; }
+.float-left { float: left; }
+
+// aspect ratio
+.ratio-primary { padding-bottom: 56.25%; }
