@@ -1,0 +1,32 @@
+// fonts 
+// -----
+
+// serif
+@font-face { 
+    font-family: "pt-serif-regular"; 
+    src: url("../assets/fonts/serif/pt-serif-regular.woff") format("woff"), url("../assets/fonts/serif/pt-serif-regular.woff2") format("woff2"), url("../assets/fonts/serif/pt-serif-regular.eot") format("eot"); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+// sans-serif
+@font-face { 
+    font-family: "open-sans-light"; 
+    src: url("../assets/fonts/sans-serif/open-sans-light.woff") format("woff"), url("../assets/fonts/sans-serif/open-sans-light.woff2") format("woff2"), url("../assets/fonts/sans-serif/open-sans-light.eot") format("eot"); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+@font-face { 
+    font-family: "open-sans-regular"; 
+    src: url("../assets/fonts/sans-serif/open-sans-regular.woff") format("woff"), url("../assets/fonts/sans-serif/open-sans-regular.woff2") format("woff2"), url("../assets/fonts/sans-serif/open-sans-regular.eot") format("eot"); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+$fontFamilySerifPrimaryRegular: "pt-serif-regular", serif;
+$fontFamilySansSerifPrimaryRegular: "open-sans-regular", serif;
+$fontFamilySansSerifPrimaryLight: "open-sans-light", serif;
+
+// color
+$colorPrimary: #292929;
