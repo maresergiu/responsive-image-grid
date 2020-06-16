@@ -15,8 +15,11 @@
             </li>
         </ul>
         <ErrorFallback 
-            v-else-if="this.imageList.response && this.imageList.response.status >= 200" />
-        <div v-else> 
+            v-else-if="this.imageList && this.imageList.response.status >= 200"
+            :status="this.imageList.response.status" />
+        <div 
+            class="holder"
+            v-else> 
             <p class="text">Please bear with us until we get the data.</p>
         </div>
     </div>
@@ -39,7 +42,7 @@ export default {
         ErrorFallback
     },
     async mounted (){
-        this.imageList = await this.axiosGet('https://api.unsplash.com/photoss', {
+        this.imageList = await this.axiosGet('https://api.unsplash.com/photos', {
             params: {
                 query: 'cat'
             },
