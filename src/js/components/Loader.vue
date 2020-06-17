@@ -13,11 +13,6 @@ import { mapGetters } from 'vuex'
 export default {
     computed: {
         ...mapGetters('loader', ['getLoaderVisibility'])
-    },
-    watch: {
-        getLoaderVisibility (){
-            console.log('getLoaderVisibility', this.getLoaderVisibility)
-        }
     }
 }
 </script>
