@@ -13,10 +13,10 @@
 </template>
 
 <script>
-import './scss/main.scss'
+import '../../scss/main.scss'
 
-import MediaList from './js/components/MediaList.vue'
-import Loader from './js/components/Loader.vue'
+import MediaList from './MediaList.vue'
+import Loader from './Loader.vue'
 
 export default {
     components: {

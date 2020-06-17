@@ -29,7 +29,8 @@ export default {
         },
         imgAlt: {
             type: String,
-            required: true
+            required: false,
+            default: ''
         },
         imgCreator: {
             type: String,
