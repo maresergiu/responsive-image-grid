@@ -46,10 +46,11 @@ export default {
     mixins: [httpCall],
     data () {
         return {
-            imageList: null,
+            imageList: '',
             imagesPerPage: 10,
             countRequests: 0,
-            showSeeMore: true
+            showSeeMore: '',
+            firstHttpCall: true
         }
     },
     components: {
@@ -87,7 +88,9 @@ export default {
                 this.setLoaderVisibility(false)
             }, 1000)
 
-            this.imageList = [...result]
+            this.imageList = this.firstHttpCall ? [...result] : [this.imageList, ...result]
+
+            if(this.firstHttpCall) this.firstHttpCall === false
         }
     },
     async mounted (){
