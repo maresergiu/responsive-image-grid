@@ -26,6 +26,8 @@
             &-holder { position: relative; overflow: hidden; }
         }
 
-        &_cover { position: absolute; bottom: 10px; left: 10px; padding: 10px; background-color: $colorSecondary; color: $colorPrimary; z-index: 3; }
-    }    
+        &_cover { position: absolute; bottom: 10px; left: 10px; z-index: 3; }
+    }
+    
+    &-cta-holder { background-color: $colorTertiary; padding: 40px 0; }
 }

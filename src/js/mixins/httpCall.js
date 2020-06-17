@@ -7,7 +7,7 @@ export default {
             
             await axios.get(url, params)
             .then(r => {
-                httpData = r.data                
+                httpData = r.data
             })
             .catch(error => {
                 httpData = {...error}

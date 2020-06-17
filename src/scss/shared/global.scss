@@ -12,11 +12,14 @@ ol { list-style-type: none; padding: 0; margin: 0; }
 
 img { width: 100%; height: auto; }
 
-a { position: relative; text-decoration: none; }
+a { text-decoration: none; }
 
-.decoration-primary:after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 4px; background-color: $colorPrimary; transform: scaleX(0); transition: $transitionPrimary; }
-.decoration-primary:hover:after,
-.decoration-primary:focus:after { transform: scaleX(1); }
+button { padding: 0; margin: 0; border: none; outline: none; }
+
+.cta { position: relative; padding: 10px; background-color: $colorSecondary; color: $colorPrimary; cursor: pointer; }
+.cta:after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 4px; background-color: $colorPrimary; transform: scaleX(0); transition: $transitionPrimary; }
+.cta:hover:after,
+.cta:focus:after { transform: scaleX(1); }
 
 // containers
 .holder { max-width: 1400px; padding: 0 20px; margin: 0 auto; }
@@ -28,10 +31,12 @@ a { position: relative; text-decoration: none; }
 // module spacing 
 .mod { padding-top: 40px; }
 
-
 // float
 .cf::after { content: ""; clear: both; display: table; }
 .float-left { float: left; }
 
 // aspect ratio
 .ratio-primary { padding-bottom: 56.25%; }
+
+// vertical alignment
+.horizontal-center { text-align: center; }

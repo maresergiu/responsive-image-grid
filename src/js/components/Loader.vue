@@ -1,0 +1,23 @@
+<template>
+    <div 
+        class="loader"
+        :class="{'active': getLoaderVisibility}">
+        <div class="loader-circle"></div>
+        <div class="loader-circle"></div>
+    </div>
+</template>
+
+<script>
+import { mapGetters } from 'vuex'
+
+export default {
+    computed: {
+        ...mapGetters('loader', ['getLoaderVisibility'])
+    },
+    watch: {
+        getLoaderVisibility (){
+            console.log('getLoaderVisibility', this.getLoaderVisibility)
+        }
+    }
+}
+</script>
