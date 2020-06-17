@@ -12,7 +12,7 @@
                 :alt="imgAlt" />
         </figure>
         <a 
-            class="media-list-element_cover decoration-primary"
+            class="media-list-element_cover cta"
             :href="imgCreatorHref"
             target="_blank">
             {{imgCreator}}

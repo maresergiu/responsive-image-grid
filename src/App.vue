@@ -8,17 +8,20 @@
         <div id="main">
             <MediaList />
         </div>
+        <Loader />
     </div>
 </template>
 
 <script>
 import './scss/main.scss'
 
-import MediaList from './components/MediaList.vue'
+import MediaList from './js/components/MediaList.vue'
+import Loader from './js/components/Loader.vue'
 
 export default {
     components: {
-        MediaList
+        MediaList,
+        Loader
     }
 }
 </script>
